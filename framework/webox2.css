@@ -1,0 +1,19 @@
+/*
+Copyright (C) 2011 by yinsee@wsatp.com
+Published under GPLv3 License
+
+https://github.com/yinsee/WEBOX2/blob/master/webox2.css
+*/
+
+.ced[contentEditable=true] {
+	background:rgba(200,200,255,0.5);
+}
+ 
+.ced.changed {
+	background:rgba(255,0,0,0.1);
+}
+
+.ied_uploading {
+	background:#ccc url('../ui/ced_uploading.gif') center center no-repeat !important;
+	background-size:initial !important;
+}
