@@ -1,0 +1,74 @@
+/* Easy Slider */
+
+#slider ul, #slider li,
+#slider2 ul, #slider2 li{
+  margin:0;
+  padding:0;
+  list-style:none;
+  }
+#slider2{margin-top:1em;}
+#slider li, #slider2 li{ 
+  /* 
+    define width and height of list item (slide)
+    entire slider area will adjust according to the parameters provided here
+  */ 
+  width:480px;
+  height:360px;
+  overflow:hidden; 
+  }	
+#prevBtn, #nextBtn,
+#slider1next, #slider1prev{ 
+  display:block;
+  width:30px;
+  height:77px;
+  position:absolute;
+  left:-30px;
+  top:71px;
+  z-index:1000;
+  }	
+#nextBtn, #slider1next{ 
+  left:696px;
+  }														
+#prevBtn a, #nextBtn a,
+#slider1next a, #slider1prev a{  
+  display:block;
+  position:relative;
+  width:30px;
+  height:77px;
+  background:url(../images/btn_prev.gif) no-repeat 0 0;	
+  }	
+#nextBtn a, #slider1next a{ 
+  background:url(../images/btn_next.gif) no-repeat 0 0;	
+  }	
+  
+/* numeric controls */	
+
+ol#controls{
+  margin-top:78px; 
+  padding:0;
+  height:11px;
+  width: 480px;
+  text-align: center;
+  }
+ol#controls li{
+  padding:0;
+  list-style:none;
+  height:11px;
+  line-height:11px;
+  display: inline-block;
+  }
+ol#controls li a{
+  float:left;
+  height:11px;
+  width: 12px;
+  background-image: url("../images/dot1.jpg");
+  background-repeat: no-repeat;
+  margin:0 3px;
+  }
+ol#controls li.current a{
+  background-repeat: no-repeat;
+  background-image: url("../images/dot2.jpg");
+  }
+ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+
+/* // Easy Slider */
