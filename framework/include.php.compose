@@ -14,7 +14,7 @@ define('REQUEST_ACTION_PARAM', 'a');	// set ?a=xxx querystring for action
 if (!isset($_SERVER['HTTPS'])) $_SERVER['HTTPS'] = false;
 if(php_sapi_name() == 'cli' || empty($_SERVER['REMOTE_ADDR'])) {
 	define('DIR_ROOT', realpath(dirname(__file__).'/..').'/');
-	define('URL_BASE_HREF','http://cloud.arms-fnb.com/');
+	define('URL_BASE_HREF','http://cloud.punkprogrammer.com/');
 }
 elseif (strpos(str_replace("\\","/", realpath(dirname(__file__).'/..')), $_SERVER['DOCUMENT_ROOT'])!==0)
 {
@@ -394,7 +394,7 @@ class Module extends WEBOX2
 			/*if ($from=='') $from = _config('mailsender');
 			elseif (!strstr($from,"@")) $from = $from."@"._config('maildomain');
 			$mail->SetFrom($from);*/
-			$mail->SetFrom("noreply@arms-fnb.com");
+			$mail->SetFrom("noreply@punkprogrammer.com");
 		}
 
 		// send to

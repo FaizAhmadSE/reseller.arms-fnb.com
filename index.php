@@ -671,7 +671,7 @@ REDIR_SCRIPT;
 			if (intval($ret->code)!=220){
 				$js_ret = $ret->message;
 				$to = array("cheryl"=>"cheryl@arms.my");
-				$subject = "arms-fnb.com: Failed to update device code when renew";
+				$subject = "punkprogrammer.com: Failed to update device code when renew";
 		  		$body = $js_ret;
 		  		$this->sendmail($to,$subject,$body);
 			}
@@ -1827,7 +1827,7 @@ REDIR_SCRIPT;
 					$this->payment_cb($payment_record['_id'], $this->refno, $txn_id, $subscr_id);
 	            }
  				else{
- 	                $subject = "arms-fnb.com: Payment Error Refno #".$this->refno;
+ 	                $subject = "punkprogrammer.com: Payment Error Refno #".$this->refno;
  					$this->notify_admin($subject, 'reseller.payment.error.mail.tpl');
 				}
 	            break;
