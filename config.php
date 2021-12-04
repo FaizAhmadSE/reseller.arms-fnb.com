@@ -19,8 +19,8 @@ else
 }*/
 
 $config['appname'] = 'arms-fnb';
-$config['maildomain'] = 'punkprogrammer.com';
-$config['mailsender'] = 'admin@punkprogrammer.com';
+$config['maildomain'] = 'ddns.my';
+$config['mailsender'] = 'admin@ddns.my';
 $config['mailfooter'] = "\n\n\n----------------------------\nSee you soon!";
 $config['copyright'] = ' &copy; arms-fnb '.date('Y').'.';
 
@@ -66,17 +66,17 @@ $config['settings']['payment']['paypal-sandbox-account'] = 'drkoay-facilitator@w
 $config['settings']['payment']['paypal-sandbox-api_user'] = 'drkoay-facilitator_api1.wsatp.com';
 $config['settings']['payment']['paypal-sandbox-api_pwd'] = '1392710722';
 $config['settings']['payment']['paypal-sandbox-api_signature'] = 'A..QlWWKIPNPqGGd2UXslNmSavf5Adal8Hi6Js2ZewnRw2HcuTeiE31A';
-$config['settings']['payment']['paypal-sandbox-return_url'] = 'https://reseller.punkprogrammer.com/index.php';
+$config['settings']['payment']['paypal-sandbox-return_url'] = 'https://reseller.ddns.my/index.php';
 //$config['settings']['payment']['paypal-sandbox-notify_url'] = 'http://maximus.ddns.my:3291/ipn.php';
-$config['settings']['payment']['paypal-sandbox-notify_url'] = 'https://cloud.punkprogrammer.com/ipn.php';
+$config['settings']['payment']['paypal-sandbox-notify_url'] = 'https://cloud.ddns.my/ipn.php';
 
 $config['settings']['payment']['paypal']['old_account'] = 'paypal@wsatp.com';
 $config['settings']['payment']['paypal']['account'] = 'paypal@arms.my';
 $config['settings']['payment']['paypal']['api_user'] = 'paypal_api1.wsatp.com';
 $config['settings']['payment']['paypal']['api_pwd'] = 'YZU8YL8PSMKRC28S';
 $config['settings']['payment']['paypal']['api_signature'] = 'AFcWxV21C7fd0v3bYYYRCpSSRl31A3fbch29k6kHvuJTr3.DhtziLiV8';
-$config['settings']['payment']['paypal']['return_url'] = 'https://reseller.punkprogrammer.com/index.php';
-$config['settings']['payment']['paypal']['notify_url'] = 'https://cloud.punkprogrammer.com/ipn.php';
+$config['settings']['payment']['paypal']['return_url'] = 'https://reseller.ddns.my/index.php';
+$config['settings']['payment']['paypal']['notify_url'] = 'https://cloud.ddns.my/ipn.php';
 
 //pricing for device reseller 
 $config['price_device']['lvl1'] = 7; //1-5000
@@ -92,7 +92,7 @@ if((strstr($_SERVER['HTTP_HOST'],'maximus')) || strstr($_SERVER['HTTP_HOST'],'10
   $config['api_path'] = "http://maximus:3291/";
 }
 else{
-  $config['api_path'] = "https://cloud.punkprogrammer.com/";
+  $config['api_path'] = "https://cloud.ddns.my/";
 }
 
 $config['token']['key'] = "ARMSFnBKEY4CLNT!ARMSFnBKEY4ARMSC";
