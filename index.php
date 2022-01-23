@@ -671,7 +671,7 @@ REDIR_SCRIPT;
 			if (intval($ret->code)!=220){
 				$js_ret = $ret->message;
 				$to = array("cheryl"=>"cheryl@arms.my");
-				$subject = "ddns.my: Failed to update device code when renew";
+				$subject = "armspos.tk: Failed to update device code when renew";
 		  		$body = $js_ret;
 		  		$this->sendmail($to,$subject,$body);
 			}
@@ -1827,7 +1827,7 @@ REDIR_SCRIPT;
 					$this->payment_cb($payment_record['_id'], $this->refno, $txn_id, $subscr_id);
 	            }
  				else{
- 	                $subject = "ddns.my: Payment Error Refno #".$this->refno;
+ 	                $subject = "armspos.tk: Payment Error Refno #".$this->refno;
  					$this->notify_admin($subject, 'reseller.payment.error.mail.tpl');
 				}
 	            break;
